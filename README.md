@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# React JS <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" height ="40" align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Document Object Model
 
-## Available Scripts
+- React creates single page application. It doesn't load the whole page on updation. React only updates the section of the page where change was made.
+- It updates <strong>DOM (Document Object Model)</strong>. But in React, we dont update the DOM directly like in HTML.
+- React uses Virtual DOM - a JS object, lightweight version of Real DOM. And updating virtual DOM is much faster than Real DOM.
+  <br>
 
-In the project directory, you can run:
+## Create React App
 
-### `npm start`
+1. Install nodeJS (node, npm, npx)
+2. 'npx create-react-app {moviedux}'
+3. cd moviedux
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## JSX (Javascript XML)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- U can write HTML like code in JS which is JSX. It is the vase of React.
 
-### `npm test`
+## Components in React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJS uses <strong>component</strong> based architecture.
+  > Component is a small piece of UI code which is <em>reusable</em> and <em>manageable</em>.
+  > They are functions that return JSX.
+  > <strong>Reusable</strong>: User can create a component and export it and use it inside another component by importing it.
+  > <strong>Manageable</strong>: Components can manage their own <em>state</em> and lifecycle.
+- There are 2 types of components: <strong>Class-based component</strong>(not used anymore) and <strong>Function-based component</strong>
 
-### `npm run build`
+### Function-based Component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- When we write HTML tag like syntax in JS, it is <strong>JSX</strong>. JSX is used in React to describe how the UI should look like. JSX is the core of react syntax.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## State
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- We use state in React to manage the data of components.
+- When the value of the state changes, the UI of that component re-renders automatically.
 
-### `npm run eject`
+## Props
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Fragment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Conditional Rendering
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Event Handling
