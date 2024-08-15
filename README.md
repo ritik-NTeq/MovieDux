@@ -10,7 +10,7 @@
 ## Create React App
 
 1. Install nodeJS (node, npm, npx)
-2. 'npx create-react-app {moviedux}'
+2. `npx create-react-app moviedux`
 3. cd moviedux
 
 ## JSX (Javascript XML)
