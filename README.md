@@ -37,13 +37,17 @@ Creating frontend web application <em>MovieDux</em> using React
 ## State
 
 - We use state in React to manage the data of components.
-- When the value of the state changes, the UI of that component re-renders automatically.
 - State consists of 2 parts- getting and setting value
+- `useState()` is used to define state variable and `useEffect()` is used to initialise state with data (codes which run only once)
+  > Whenever the value of the state changes, it calls the function (set) which then re-renders the UI of that component.
 
-## Props
+## Props (properties)
 
-## Fragment
+- props are used to pass <b>data</b>, <b>functions</b> or <b>event handlers</b> to components.
+- U can pass props to multiple nested components. This is called <b>prop drilling</b>
 
-## Conditional Rendering
+## Router
 
-## Event Handling
+- In React, we use `Router` to navigate the user between components or webpages.
+- Use `Routes` to configure the routing.
+- Use `Link` to navigate the user.

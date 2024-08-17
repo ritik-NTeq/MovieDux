@@ -35,9 +35,33 @@ export default function MoviesGrid(){
         setRating(e.target.value);
     };
 
+    const matchSearchTerm = (movie, searchTerm) => {
+        return movie.title.toLowerCase().includes(searchTerm.toLowerCase());
+    };
+
+    const matchGenre = (movie, genre) => {
+        return genre === "All Genres" || movie.genre.toLowerCase() === genre.toLowerCase();
+    };
+
+    const matchRating = (movie, rating) => {
+        switch(rating){
+            case 'All':
+                return true;
+            case 'Good':
+                return movie.rating >= 8.0;
+            case 'Ok':
+                return movie.rating >= 5.0 && movie.rating < 8.0;
+            case 'Bad':
+                return movie.rating < 5.0;
+            default:
+                return false;
+        }
+    }
 
     const filteredMovies = movies.filter(movie => 
-        movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+        matchSearchTerm(movie, searchTerm) &&
+        matchGenre(movie, genre) &&
+        matchRating(movie, rating)
     );
     
     return (
