@@ -1,3 +1,7 @@
+# MovieDux <img src="public/fav.png" height="40" align="center">
+
+Creating frontend web application <em>MovieDux</em> using React
+
 # React JS <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" height ="40" align="center">
 
 ## Document Object Model
@@ -34,6 +38,7 @@
 
 - We use state in React to manage the data of components.
 - When the value of the state changes, the UI of that component re-renders automatically.
+- State consists of 2 parts- getting and setting value
 
 ## Props
 
